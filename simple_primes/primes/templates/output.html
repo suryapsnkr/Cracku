@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prime Numbers Output</title>
+</head>
+<body>
+    <h1>Prime Numbers Till To {{ number }}</h1>
+    <ul>
+        {% for prime in primes %}
+            <li>{{ prime }}</li>
+        {% empty %}
+            <li>No prime numbers found.</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Check Again</a>
+</body>
+</html>
